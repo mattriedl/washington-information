@@ -1511,7 +1511,7 @@ def region_page(rname, rcities):
     counties_list = REGION_COUNTIES[rname]
     evoke = REGION_THEME.get(rname, ('', '', ''))[2]
     total_pop = sum(int(float(c['pop2020'] or 0)) for c in rcities)
-    r_kw = f"{rname} Washington, {rname} cities, living in {rname}, visiting {rname}, " + ', '.join(f'{cn} County Washington' for cn in REGION_COUNTIES[rname]) + ', Washington regions'
+    r_kw = f"{rname if rname.endswith('Washington') else rname + ' Washington'}, {rname} cities, living in {rname}, visiting {rname}, " + ', '.join(f'{cn} County Washington' for cn in REGION_COUNTIES[rname]) + ', Washington regions'
     counties_html = ', '.join(f'<a href="../../counties/{slug(cn)}/index.html">{e(cn)} County</a>' for cn in counties_list)
     sorted_cities = sorted(rcities, key=lambda c: -float(c['pop2020'] or 0))
     top = sorted_cities[:18]
