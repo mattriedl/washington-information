@@ -28,7 +28,7 @@ from generate_city_pages import (BASE_URL, SITE_NAME, DEFAULT_IMG, head, header,
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ARTICLES_JSON = os.path.join(ROOT, 'data', 'blog_articles.json')
 CONTENT_DIR = os.path.join(ROOT, 'data', 'blog_content')
-BLOG_DIR = os.path.join(ROOT, 'blog')
+BLOG_DIR = os.path.join(ROOT, 'public', 'blog')
 PUBLISHER = {'@type': 'Organization', 'name': SITE_NAME, 'url': f'{BASE_URL}/',
              'logo': {'@type': 'ImageObject', 'url': f'{BASE_URL}/assets/og-image.png', 'width': 1200, 'height': 630}}
 

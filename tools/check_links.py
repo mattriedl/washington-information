@@ -13,7 +13,7 @@ Usage: python3 tools/check_links.py        (last line: "Problems: N"; exit code 
 import os, re, sys
 from html import unescape
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'public')
 SKIP_DIRS = {'.git', 'data', 'docs', 'tools', '.github', 'node_modules', '__pycache__'}
 URL_ATTR = re.compile(r'\b(href|src)="([^"]*)"')
 SCHEME = re.compile(r'^[a-z][a-z0-9+.-]*:', re.I)

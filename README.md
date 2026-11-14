@@ -4,7 +4,7 @@ Static site for **washingtoninformation.com** — a guide to all 281 incorporate
 
 ## Build
 ```
-python3 generate_city_pages.py      # writes every page, sitemap.xml and robots.txt
+python3 generate_city_pages.py      # writes every page, sitemap.xml and robots.txt into public/
 python3 tools/check_links.py         # internal link check (last line: "Problems: N")
 ```
 Hand-written guide pages (home, counties shell, moving, visiting) live in `static_pages.py`; Washington-specific constants (regions, utilities, taglines, facts) are at the top of `generate_city_pages.py`.
@@ -18,7 +18,7 @@ python3 data/build_schools.py                  # NCES public schools by city
 ```
 
 ## Preview / deploy
-Every push to `main` runs `.github/workflows/deploy-cloudflare.yml`, which copies the public files into `dist/` and publishes them to Cloudflare Workers with `wrangler deploy` (preview at `washington-information.<account>.workers.dev`). It needs the repository secret `CLOUDFLARE_API_TOKEN` and does nothing until that is set.
+The repo is connected to Cloudflare Workers Builds: every push to `main` runs `npx wrangler deploy`, which publishes the `public/` folder as static files (see `wrangler.jsonc`). Scripts, data and docs outside `public/` are never published.
 
 ## Before launch
 - Set `ANALYTICS_ID` in `generate_city_pages.py` to the site's GA4 ID.
