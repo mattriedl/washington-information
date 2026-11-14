@@ -62,7 +62,7 @@ def home_page(cities, counties):
     faq = [('What is the capital of Washington?', 'Olympia is the capital of Washington. Seattle is the largest city.'),
            ('How many cities and counties are in Washington?', 'Washington has 281 incorporated municipalities (211 cities and 70 towns) and 39 counties. This site groups them into seven regions: Seattle Metro, the North Sound, the Olympic Peninsula, Southwest Washington, Central Washington, Eastern Washington and Southeast Washington.'),
            ('What is the population of Washington?', 'Washington had 7,705,281 residents at the 2020 Census, making it the 13th most populous state. About 2.27 million people live in King County alone.'),
-           ('Does Washington have a state income tax?', 'No. Washington has no personal state income tax. It relies on a 6.5% state sales tax plus local sales taxes, property taxes and a business and occupation (B&amp;O) tax, and it taxes large long-term capital gains. See our <a href="/moving-to-washington/#cost-of-living">moving guide</a> for details.'),
+           ('Does Washington have a state income tax?', 'Not on wages. Washington does not tax paychecks or ordinary income today. A 9.9% tax on personal income above $1 million was signed in 2026 and is scheduled to begin in 2028, but it is being challenged in court. The state relies on a 6.5% state sales tax plus local sales taxes, property taxes and a business and occupation (B&amp;O) tax, and it taxes large long-term capital gains. See our <a href="/moving-to-washington/#cost-of-living">moving guide</a> for details.'),
            ('What is Washington known for?', 'Washington is known as the Evergreen State for its forests. It is home to Mount Rainier and three national parks, Puget Sound and its ferries, the apple and hop harvests east of the Cascades, a large wine industry and companies such as Microsoft, Amazon, Boeing and Starbucks.'),
            ('What time zone is Washington in?', 'All of Washington is in the Pacific Time Zone and observes daylight saving time.')]
     faq_html, faq_ld = faq_block(faq, 'Washington Quick Facts: Frequently Asked Questions')
@@ -84,14 +84,14 @@ def home_page(cities, counties):
             + '<p>Thinking about relocating? Our <a href="/moving-to-washington/">moving to Washington guide</a> covers taxes, housing, utilities, licensing deadlines and schools. Planning a trip? The <a href="/visit-washington/">Visit Washington guide</a> covers national parks, islands, wine country and scenic drives. Looking up an address? See every <a href="/washington-zip-codes/">Washington ZIP code</a> and <a href="/washington-area-codes/">area code</a>.</p></section>'
             + '<h2 class="st">Washington at a Glance</h2><div class="stat-row">'
             + '<div class="stat"><b>7.7M</b><span>Population (2020 Census)</span></div><div class="stat"><b>71,362</b><span>Square miles</span></div>'
-            + '<div class="stat"><b>Olympia</b><span>Capital</span></div><div class="stat"><b>$0</b><span>State income tax</span></div></div>'
+            + '<div class="stat"><b>Olympia</b><span>Capital</span></div><div class="stat"><b>$0</b><span>State tax on wages</span></div></div>'
             + '<h2 class="st">Explore by Topic</h2><div class="cards four">'
             + '<a class="card" href="/moving-to-washington/"><h3>&#127968; Moving to Washington?</h3><p>Taxes and cost of living, housing, utilities, the 30-day licensing deadline, schools, voting and health coverage.</p><span class="go">Getting started &rarr;</span></a>'
             + '<a class="card" href="/visit-washington/"><h3>&#127794; Visiting Washington?</h3><p>Three national parks, the San Juan Islands, ferries, wine country, scenic byways and the best time to go.</p><span class="go">Plan your trip &rarr;</span></a>'
             + '<a class="card" href="/counties/"><h3>&#128506;&#65039; Browse by County</h3><p>All 39 counties with an interactive map, county seats, population, cities and official links.</p><span class="go">County directory &rarr;</span></a>'
             + '<a class="card" href="/cities/"><h3>&#127961;&#65039; Every Washington City</h3><p>All 281 incorporated cities and towns, each with population, schools, utilities, weather and nearby cities.</p><span class="go">City directory &rarr;</span></a></div>'
             + f'<h2 class="st">Major Cities</h2><div class="city-grid">{cards}</div><p><a href="/cities/">View all 281 Washington cities and towns A&ndash;Z &rarr;</a></p>'
-            + '<!--home-regions--><!--/home-regions-->'
+            + '<!--home-regions--><!--/home-regions--></div><!--home-blog--><!--/home-blog--><div class="wrap">'
             + faq_html + '<p class="src">More state facts, symbols and history are on our <a href="/washington/">Washington state guide</a>.</p>'
             + '</div></main>' + footer('/'))
 
@@ -122,7 +122,7 @@ def counties_shell(counties):
 # ---------------------------------------------------------------- moving guide
 def moving_page(cities):
     def link(name): return f'<a href="/cities/{slug(name)}/">{e(name)}</a>'
-    faq = [('Does Washington have a state income tax?', 'No. Washington does not tax wages or other personal income. It does tax long-term capital gains above a large annual threshold, and it collects sales tax, property tax and a business and occupation (B&amp;O) tax on businesses.'),
+    faq = [('Does Washington have a state income tax?', 'Not on wages. Washington does not tax paychecks today. It taxes long-term capital gains above a large annual threshold (7%, rising to 9.9% on gains over $1 million), a 9.9% tax on personal income above $1 million is scheduled to begin in 2028 (it is being challenged in court), and it collects sales tax, property tax and a business and occupation (B&amp;O) tax on businesses.'),
            ('What is the sales tax in Washington?', 'The state sales tax is 6.5%. Cities, counties and transit districts add local sales tax, so the combined rate is roughly 7.6% to 10.6% depending on where you shop. Check any address with the <a href="https://dor.wa.gov/"' + EXT + '>Department of Revenue</a>.'),
            ('How long do I have to get a Washington driver license after moving?', 'New residents have 30 days to get a Washington driver license, and vehicles must be registered in Washington within 30 days of becoming a resident. You need your Washington license before you can register a vehicle.'),
            ('How do I register to vote in Washington?', 'Register online at <a href="https://voter.votewa.gov/"' + EXT + '>VoteWA</a> with a Washington driver license or ID. Washington votes by mail: every registered voter is mailed a ballot for each election.'),
@@ -150,7 +150,7 @@ def moving_page(cities):
     util_html = '<ul style="padding-left:20px">' + ''.join(
         f'<li style="padding:4px 0"><strong>' + (f'<a href="{u}"{EXT}>{e(nm)}</a>' if u else e(nm)) + f'</strong> &mdash; {e(d)}</li>' for nm, u, d in util) + '</ul>'
     title = 'Moving to Washington: Taxes, Costs, Licensing & Best Cities'
-    desc = 'Moving to Washington State? No income tax, sales tax rates, housing, utilities, the 30-day license deadline, schools and a step-by-step moving checklist.'
+    desc = 'Moving to Washington State? No tax on wages, sales tax rates, housing, utilities, the 30-day license deadline, schools and a step-by-step moving checklist.'
     path = '/moving-to-washington/'
     guide_ld = ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': title, 'description': desc, 'url': f'{BASE_URL}{path}',
                    'publisher': {'@id': f'{BASE_URL}/#organization'}})
@@ -163,7 +163,7 @@ def moving_page(cities):
             + '<li><a href="#where">Where to live</a></li><li><a href="#utilities">Utilities</a></li><li><a href="#licensing">Driver license &amp; vehicles</a></li><li><a href="#resources">Official resources</a></li><li><a href="#faq">FAQ</a></li></ol></nav>'
             + f'<h2 class="st" id="checklist">Moving Checklist</h2>{steps_html}'
             + '<h2 class="st" id="cost-of-living">Taxes and Cost of Living</h2><section class="prose">'
-            + '<p><strong>No income tax.</strong> Washington is one of a handful of states with no personal income tax on wages. That is the biggest financial difference for most people moving here, especially from Oregon, California or Idaho.</p>'
+            + '<p><strong>No tax on wages.</strong> Washington is one of a handful of states that does not tax paychecks. A 9.9% tax on personal income above $1 million was signed in 2026 and is scheduled to begin in 2028, but it is being challenged in court and affects only the highest earners. That is the biggest financial difference for most people moving here, especially from Oregon, California or Idaho.</p>'
             + '<p><strong>Sales tax.</strong> The state rate is 6.5%, and local sales taxes push the combined rate to roughly 7.6% to 10.6%. Groceries and prescription drugs are exempt. Vehicle purchases also carry sales tax plus registration fees.</p>'
             + '<p><strong>Other taxes.</strong> Property taxes are set locally and vary by county and levy. Washington taxes long-term capital gains above a high annual threshold and has a state estate tax. Businesses pay the business and occupation (B&amp;O) tax on gross receipts.</p>'
             + '<p><strong>Housing.</strong> Housing is the largest cost difference between communities. Prices and rents are highest in King County and the Eastside, somewhat lower in Pierce, Snohomish, Thurston and Clark counties, and generally much lower east of the Cascades. Check current listings and the <a href="https://www.wshfc.org/"' + EXT + '>WSHFC</a> buyer programs before you commit.</p></section>'
@@ -181,6 +181,7 @@ def moving_page(cities):
             + '<div class="card"><h3>&#127891; Schools</h3><ul><li><a href="https://ospi.k12.wa.us/"' + EXT + '>OSPI (K-12)</a></li><li>School lists on every <a href="/cities/">city page</a></li></ul></div>'
             + '<div class="card"><h3>&#127963; Government</h3><ul><li><a href="https://wa.gov/"' + EXT + '>WA.gov</a></li><li><a href="https://dor.wa.gov/"' + EXT + '>Department of Revenue</a></li><li><a href="https://voter.votewa.gov/"' + EXT + '>VoteWA</a></li></ul></div></div>'
             + '<div id="faq"></div>' + faq_html
+            + '</div><!--blog-moving--><!--/blog-moving--><div class="wrap">'
             + '<p class="back"><a href="/">&larr; Home</a> &middot; <a href="/visit-washington/">Visiting Washington &rarr;</a></p></div></main>' + footer('/'))
 
 
@@ -232,4 +233,5 @@ def visit_page(cities):
             + '<div class="card"><h3>&#128652; Getting around</h3><ul><li><a href="https://wsdot.wa.gov/travel/washington-state-ferries"' + EXT + '>Washington State Ferries</a></li><li><a href="https://wsdot.com/travel/real-time/map"' + EXT + '>WSDOT travel map</a></li><li><a href="https://www.soundtransit.org/"' + EXT + '>Sound Transit light rail</a></li></ul></div>'
             + '<div class="card"><h3>&#128506;&#65039; Trip ideas</h3><ul><li><a href="https://stateofwatourism.com/"' + EXT + '>State of Washington Tourism</a></li><li><a href="https://visitseattle.org/"' + EXT + '>Visit Seattle</a></li></ul></div></div>'
             + faq_html
+            + '</div><!--blog-visiting--><!--/blog-visiting--><div class="wrap">'
             + '<p class="back"><a href="/">&larr; Home</a> &middot; <a href="/moving-to-washington/">Moving to Washington &rarr;</a></p></div></main>' + footer('/'))

@@ -23,7 +23,7 @@ import json, os, re
 from datetime import date
 
 from generate_city_pages import (BASE_URL, SITE_NAME, DEFAULT_IMG, head, header, footer,
-                                 ticker_html, alert_banner, ld, e, washington_silhouette, clean_links, replace_block)
+                                 ticker_html, alert_banner, ld, e, state_silhouette, clean_links, replace_block)
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ARTICLES_JSON = os.path.join(ROOT, 'data', 'blog_articles.json')
@@ -34,10 +34,10 @@ PUBLISHER = {'@type': 'Organization', 'name': SITE_NAME, 'url': f'{BASE_URL}/',
 
 CTAS = {
     'moving': ('Planning your move to Washington?',
-               'Our free Moving to Washington guide walks you through DMV deadlines, utilities, voter registration, schools and choosing the right city &mdash; step by step.',
+               'Our free Moving to Washington guide walks you through taxes, licensing deadlines, utilities, voter registration, schools and choosing the right city &mdash; step by step.',
                'moving-to-washington/index.html', 'Read the Moving to Washington guide &rarr;', 'cities/index.html', 'Browse all 281 cities and towns'),
     'visiting': ('Ready to see Washington for yourself?',
-                 'Our Visit Washington guide covers the coast, Crater Lake, the Gorge, wine country and road-trip routes &mdash; with links to every official source.',
+                 'Our Visit Washington guide covers the national parks, the San Juan Islands, wine country and scenic drives &mdash; with links to every official source.',
                  'visit-washington/index.html', 'Plan your Washington visit &rarr;', 'regions/index.html', 'Explore the 7 regions'),
 }
 
@@ -133,10 +133,10 @@ def article_page(a, body, all_arts):
                   if a.get('image_page') else '')
         fig = (f'<figure class="post-hero"><img src="{e(a["image"])}" alt="{e(a.get("image_alt") or a["title"])}" width="960" height="540" '
                f'fetchpriority="high" style="width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px">'
-               f'<figcaption style="font-size:.8rem;color:#5b6b64;margin-top:4px">{credit}</figcaption></figure>')
+               f'<figcaption style="font-size:.8rem;color:#5b6b75;margin-top:4px">{credit}</figcaption></figure>')
     return (head(title_tag, a['description'], path, 'article', img, extra, up, ', '.join(a.get('keywords', [])))
             + header(up) + ticker_html(a['slug']) + alert_banner()
-            + f'<div class="hero region-hero">{washington_silhouette()}<div class="wrap"><p class="or-eyebrow">{e(a.get("category", "Washington"))}</p>'
+            + f'<div class="hero region-hero">{state_silhouette()}<div class="wrap"><p class="or-eyebrow">{e(a.get("category", "Washington"))}</p>'
             + f'<h1>{e(a.get("h1") or a["title"])}</h1>' + (f'<p>{e(a["hero_sub"])}</p>' if a.get('hero_sub') else '')
             + f'<div class="post-meta"><span class="pill">&#128197; <time datetime="{a["date"]}">{nice_date(a["date"])}</time></span>'
             + (f'<span class="pill">Updated <time datetime="{modified}">{nice_date(modified)}</time></span>' if modified != a['date'] else '')
@@ -153,7 +153,7 @@ def index_page(arts):
     path = '/blog/'
     title = 'Washington Information Blog | Moving, Living & Visiting Washington'
     desc = ('Practical, well-researched guides to moving to Washington, the best places to live, cost of living, '
-            'small towns and visiting the Beaver State.')
+            'small towns and visiting the Evergreen State.')
     kw = 'Washington blog, moving to Washington, living in Washington, best places to live in Washington, Washington cost of living, visiting Washington'
     items = [{'@type': 'ListItem', 'position': i + 1, 'url': f'{BASE_URL}/blog/{a["slug"]}/', 'name': a['title']} for i, a in enumerate(arts)]
     blog_ld = {'@context': 'https://schema.org', '@type': 'Blog', 'name': f'{SITE_NAME} Blog', 'url': f'{BASE_URL}{path}',
@@ -168,7 +168,7 @@ def index_page(arts):
     cards = ''.join(card(a, '') for a in arts) or '<p>New articles are on the way &mdash; check back soon.</p>'
     return (head(title, desc, path, 'website', None, ld(blog_ld) + ld(list_ld) + ld(bread), up, kw)
             + header(up) + ticker_html('blog') + alert_banner()
-            + f'<div class="hero region-hero">{washington_silhouette()}<div class="wrap"><p class="or-eyebrow">The Washington Information Blog</p>'
+            + f'<div class="hero region-hero">{state_silhouette()}<div class="wrap"><p class="or-eyebrow">The Washington Information Blog</p>'
             + '<h1>Moving, Living &amp; Visiting Washington</h1>'
             + '<p>In-depth, plain-language guides for newcomers, house-hunters and travelers &mdash; built on Census data, official state sources and local knowledge.</p>'
             + f'<div class="pills"><span class="pill">&#128240; {len(arts)} article{"s" if len(arts) != 1 else ""}</span>'
@@ -178,8 +178,8 @@ def index_page(arts):
             + '<h2 class="st">Keep Exploring Washington</h2><nav class="dir-list">'
             + f'<a href="{up}moving-to-washington/index.html">Moving to Washington<small>Step-by-step relocation guide</small></a>'
             + f'<a href="{up}visit-washington/index.html">Visit Washington<small>Trip planning &amp; top sights</small></a>'
-            + f'<a href="{up}regions/index.html">Washington&rsquo;s 7 Regions<small>Coast to high desert</small></a>'
-            + f'<a href="{up}cities/index.html">Cities A&ndash;Z<small>All 241 incorporated cities</small></a>'
+            + f'<a href="{up}regions/index.html">Washington&rsquo;s 7 Regions<small>Puget Sound to the Palouse</small></a>'
+            + f'<a href="{up}cities/index.html">Cities A&ndash;Z<small>All 281 cities and towns</small></a>'
             + f'<a href="{up}counties/index.html">Counties<small>All 39 Washington counties</small></a></nav>'
             + '</div></main>' + footer(up))
 
@@ -203,18 +203,18 @@ def mini_cards(arts, title, sub):
 
 def update_guide_blocks(arts):
     """Link the newest articles from the homepage and the topic guides (hand-designed pages with marker comments)."""
-    replace_block(os.path.join(ROOT, 'index.html'), 'home-blog',
+    replace_block(os.path.join(ROOT, 'public', 'index.html'), 'home-blog',
                   mini_cards(arts[:6], 'Latest Washington Guides from Our Blog', 'In-depth articles on moving to, living in and exploring Washington.'))
-    replace_block(os.path.join(ROOT, 'moving-to-washington', 'index.html'), 'blog-moving',
+    replace_block(os.path.join(ROOT, 'public', 'moving-to-washington', 'index.html'), 'blog-moving',
                   mini_cards([a for a in arts if a.get('cta') == 'moving'][:6], 'More Guides for Moving to Washington',
                              'Detailed articles on costs, cities, neighborhoods and weather to help you plan your move.'))
-    replace_block(os.path.join(ROOT, 'visit-washington', 'index.html'), 'blog-visiting',
+    replace_block(os.path.join(ROOT, 'public', 'visit-washington', 'index.html'), 'blog-visiting',
                   mini_cards([a for a in arts if a.get('cta') == 'visiting'][:6], 'Washington Travel Guides from Our Blog',
                              'Road trips, seasonal events and the best places to visit across Washington.'))
 
 
 def update_sitemap(arts):
-    sm_path = os.path.join(ROOT, 'sitemap.xml')
+    sm_path = os.path.join(ROOT, 'public', 'sitemap.xml')
     if not os.path.exists(sm_path):
         return 0
     with open(sm_path, encoding='utf-8') as f:

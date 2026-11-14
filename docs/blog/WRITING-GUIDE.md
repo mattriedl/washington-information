@@ -11,14 +11,14 @@ Google's helpful-content and E-E-A-T standards are the bar: answer the search be
 
 ## 1. Choose the topic and keywords (OpenSEO + web search)
 
-Use the OpenSEO tools (project `de4ec873-04de-43ec-94df-f65fe1429c97`, market US/English).
+Use the OpenSEO tools (market US/English).
 Budget: about 150-400 OpenSEO credits per article. Never start a batch over 2,000 credits.
 
 1. **Read `docs/blog/topics.md`** (backlog + published list) and the `keywords` of every article in
    `data/blog_articles.json`. Never reuse another article's primary keyword or search intent.
 2. **Check what is timely.** Today's date decides. Seasonal topics must publish **2-6 weeks before** the
-   season peaks (holiday lights by mid-November, whale watching by mid-December, tax/kicker in January,
-   wildflowers and tulips in March, camping and road trips in May). Use web search for news and events
+   season peaks (holiday lights by mid-November, ski season by early December,
+   tulips in March, camping and road trips in May). Use web search for news and events
    happening in Washington now (new attractions, festivals, laws, closures, records) and for "2026"/"2027" searches.
 3. **Pick a candidate** from the top of the backlog (or a better timely idea), then confirm it with OpenSEO:
    - `research_keywords` on 1-3 seeds (the default 150 results is enough). Filter for Washington-related rows.
@@ -29,8 +29,8 @@ Budget: about 150-400 OpenSEO credits per article. Never start a batch over 2,00
      "People also ask"-style questions. Plan to beat them: more complete, more current, more specific.
 4. **Pick ONE primary keyword**: real demand (ideally 500+/month, or a cluster that adds up), keyword
    difficulty preferably under 30, and a page one that has blogs, forums or thin pages we can outdo.
-   Avoid head terms dominated by official sites (e.g. "crater lake") unless you target a long tail
-   ("crater lake in winter").
+   Avoid head terms dominated by official sites (e.g. "mount rainier") unless you target a long tail
+   ("mount rainier in winter").
 5. **Pick 4-9 secondary keywords**: long-tail variations and questions (who/what/when/where/how/is/can/best/cost).
    They become H2/H3 headings and FAQ questions.
 6. Record the choice in `docs/blog/topics.md` (move the row from Backlog to Published when you publish), and
@@ -39,9 +39,9 @@ Budget: about 150-400 OpenSEO credits per article. Never start a batch over 2,00
 
 ## 2. Research the facts
 
-- Use web search and WebFetch to read **primary sources**: wa.gov agencies (ODOT/TripCheck, Washington State
-  Parks, Department of Revenue, OHA, ODFW), NPS, USFS, BLM, NOAA/NWS, city and county sites, Travel Washington,
-  Travel Portland, official event and business websites.
+- Use web search and WebFetch to read **primary sources**: wa.gov agencies (WSDOT, Washington State
+  Parks, Department of Revenue, DOL, WDFW), NPS, USFS, BLM, NOAA/NWS, city and county sites, State of Washington Tourism,
+  Visit Seattle, official event and business websites.
 - Write down exact figures, dates, prices, hours, addresses and URLs as you go.
 - **Never invent** statistics, quotes, prices, events, reviews, personal experiences or "our team visited".
   If a fact can't be verified, leave it out or say plainly what to check.
@@ -82,7 +82,7 @@ Rules:
   Add the year only for genuinely time-bound topics (events, taxes, "2026").
 - **description**: 140-160 characters, primary keyword in the first half, written to earn the click.
 - **Length**: 1,800-3,000 words for guides and lists, 1,500+ minimum. Depth over padding.
-- **Structure** (copy the pattern of `data/blog_content/washington-coast-storm-watching.html`):
+- **Structure** (copy the pattern of `data/blog_content/moving-to-washington-from-california.html`):
   1. `<p class="lede">`: answer the search in the first 2-3 sentences; primary keyword in the first 100 words, in bold once.
   2. `<div class="callout">` "Quick answer" box: 4-6 bullet facts (great for featured snippets and AI answers).
   3. `<nav class="toc" aria-label="Table of contents">` linking to every `<h2 id="...">`.
@@ -103,7 +103,6 @@ Rules:
   WebFetch to confirm author and license. Use the 960px thumbnail URL, `width`/`height`, `loading="lazy"`,
   `decoding="async"`, descriptive `alt`, and a visible credit:
   `<figcaption>Caption. <small>Photo: <a href="https://commons.wikimedia.org/wiki/File:..." target="_blank" rel="noopener">Author / License</a> via Wikimedia Commons</small></figcaption>`.
-  `data/city_images.json` already lists verified photos for every city (src, page, artist, license, caption).
 - **Voice**: plain, friendly, confident US English. Short paragraphs, specific details (miles, prices, months,
   trail lengths), no hype, no filler ("nestled", "bustling", "delve", "in conclusion"). Write for someone deciding
   something; tell them what to do.

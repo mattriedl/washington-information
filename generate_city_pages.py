@@ -148,7 +148,7 @@ REGION_CONTENT = {
  'Southwest Washington':{
   'desc':"The state capital Olympia, fast-growing Vancouver across the Columbia from Portland, Longview, Centralia and the country around Mount St. Helens and the Columbia River Gorge.",
   'hero_sub':"Olympia, Vancouver and Mount St. Helens — the capital region and the Columbia River country.",
-  'living':"Olympia, Lacey and Tumwater form the capital metro, where state government is the largest employer. Vancouver, Camas, Battle Ground and Ridgefield in Clark County are among the fastest-growing cities in the state, partly because residents can work in Portland while living in a state with no income tax (Washington still taxes income earned there). Longview, Kelso and Centralia are mid-sized river and rail towns with lower housing costs.",
+  'living':"Olympia, Lacey and Tumwater form the capital metro, where state government is the largest employer. Vancouver, Camas, Battle Ground and Ridgefield in Clark County are among the fastest-growing cities in the state, partly because residents can work in Portland while living in a state that does not tax wages (Oregon still taxes income earned there). Longview, Kelso and Centralia are mid-sized river and rail towns with lower housing costs.",
   'visiting':"Mount St. Helens National Volcanic Monument, with the Johnston Ridge area and Ape Cave lava tube, is the region's headline sight. The Washington side of the Columbia River Gorge has Beacon Rock and Dog Mountain, Fort Vancouver National Historic Site recalls the fur trade, and Olympia's Capitol Campus and waterfront make an easy stop on I-5.",
   'highlights':["Olympia — the state capital, Capitol Campus and farmers market","Vancouver — Fort Vancouver and a booming waterfront","Camas & Washougal — gateway to the Columbia River Gorge","Longview — planned 1920s city on the Columbia","Centralia — historic downtown midway between Seattle and Portland","Stevenson — Gorge town near Beacon Rock and the Bridge of the Gods"],
  },
@@ -328,10 +328,10 @@ STATE_FACTS = [
  ('State fruit','Apple'),
  ('State song','“Washington, My Home”'),
  ('Highest point','Mount Rainier, 14,411 ft (4,392 m)'),
- ('Longest river','Columbia River (forms most of the southern border with Washington)'),
+ ('Longest river','Columbia River (forms most of the southern border with Oregon)'),
  ('Time zone','Pacific Time'),
  ('Abbreviation','WA (postal); Wash. (traditional)'),
- ('No income tax','Washington levies no personal state income tax (a tax on large capital gains applies)'),
+ ('Income tax','None on wages and ordinary income today; taxes apply to large capital gains, and a 9.9% tax on income over $1 million is scheduled for 2028 (under court challenge)'),
 ]
 
 CSS = ":root{--gd:#0e2a3b;--g:#1f6f6b;--gold:#e8835a;--blue:#1d5d8f;--bg:#f2f6f8;--tx:#1d2b33;--mu:#5b6b75}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Source Sans 3',system-ui,sans-serif;color:var(--tx);line-height:1.6;background:#fff}h1,h2,h3{font-family:'Outfit',system-ui,sans-serif;line-height:1.25}.wrap{max-width:1000px;margin:0 auto;padding:0 24px}.hd{background:var(--gd);color:#fff;padding:14px 0;position:sticky;top:0;z-index:50}.hd nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;color:#fff;text-decoration:none}.badge{width:30px;height:30px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center}.nl{list-style:none;display:flex;gap:16px;flex-wrap:wrap}.nl a{color:#dbe7ee;text-decoration:none;font-weight:600;font-size:.9rem}.nl a:hover{color:var(--gold)}.hero{background:linear-gradient(160deg,var(--gd),var(--g));color:#fff;padding:52px 0 44px;margin-bottom:36px}.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);max-width:760px}.hero p{color:#d9e9f0;margin-top:12px;max-width:640px}.crumbs{font-size:.88rem;color:var(--mu);padding:14px 0 0}.crumbs a{color:var(--blue);text-decoration:none}h2.st{font-size:1.45rem;color:var(--gd);margin:36px 0 16px;border-bottom:3px solid var(--g);padding-bottom:8px}.facts{background:var(--bg);border:1px solid #dfe7ec;border-radius:10px;padding:20px;margin:24px 0}.facts table{width:100%;border-collapse:collapse}.facts th{text-align:left;padding:9px;color:var(--gd);border-bottom:2px solid var(--g);width:35%;vertical-align:top}.facts td{padding:9px;border-bottom:1px solid #dfe7ec}.facts a,.prose a,.tbl a{color:var(--blue)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:24px 0}.card{background:#fff;border:1px solid #dfe7ec;border-top:4px solid var(--g);border-radius:10px;padding:20px}.card h3{font-size:1rem;color:var(--gd);margin-bottom:10px}.card ul{list-style:none}.card li{padding:6px 0;border-bottom:1px dashed #dfe7ec;font-size:.92rem}.card a{color:var(--blue);text-decoration:none;font-weight:600}.faq details{background:#fff;border:1px solid #dfe7ec;border-radius:8px;margin:9px 0;padding:0 16px}.faq summary{cursor:pointer;font-weight:600;padding:13px 0;color:var(--gd)}.faq p{padding:0 0 14px;font-size:.94rem}.faq ul{padding-left:20px}.faq li{padding:3px 0}.faq a{color:var(--blue)}.back{margin-top:40px;padding-top:18px;border-top:1px solid #dfe7ec}.back a{color:var(--g);font-weight:700;text-decoration:none}.ft{background:var(--gd);color:#cfdde6;padding:30px 0;text-align:center;font-size:.84rem;margin-top:44px}.ft a{color:#fff;text-decoration:none;font-weight:600}.ft .fl{margin-bottom:10px}.ft .fl a{margin:0 9px}.dir-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:16px 0 26px}.dir-list a{background:var(--bg);border:1px solid #d3dfe6;border-radius:6px;padding:10px 14px;text-decoration:none;color:var(--blue);font-weight:600;font-size:.9rem}.dir-list a small{display:block;color:var(--mu);font-weight:400;font-size:.78rem}.dir-list a:hover{background:var(--g);color:#fff}.dir-list a:hover small{color:#d9e9f0}.photo{margin:24px 0}.photo img{width:100%;max-height:440px;object-fit:cover;border-radius:10px;background:var(--bg)}.photo figcaption,.src{font-size:.8rem;color:var(--mu);margin-top:6px}.src a{color:var(--mu)}.prose p{margin:0 0 14px}.tbl{width:100%;border-collapse:collapse;margin:16px 0;font-size:.93rem}.tbl th{background:var(--gd);color:#fff;text-align:left;padding:9px}.tbl td{padding:9px;border-bottom:1px solid #dfe7ec}.tbl tr:nth-child(even) td{background:var(--bg)}.alpha{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 20px}.alpha a{background:var(--gd);color:#fff;text-decoration:none;font-weight:700;padding:6px 11px;border-radius:5px}.alpha a:hover{background:var(--gold)}h3.letter{font-size:1.3rem;color:var(--gd);margin-top:22px;scroll-margin-top:80px}#q{width:100%;padding:12px 14px;font-size:1rem;border:2px solid #d3dfe6;border-radius:8px}.gallery{display:grid;gap:14px;margin:20px 0 10px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}.gallery.g1{display:flex}.gallery.g1 figure{width:fit-content;max-width:min(100%,560px)}.gallery figure{background:var(--bg);border:1px solid #dfe7ec;border-radius:10px;overflow:hidden}.gallery img{width:100%;height:210px;object-fit:cover;display:block}.gallery.g1 img{width:auto;max-width:100%;height:auto;max-height:480px}.gallery figcaption{font-size:.82rem;color:var(--tx);padding:8px 10px;line-height:1.35}.gallery figcaption small{color:var(--mu);font-size:.74rem}.gallery figcaption a{color:var(--mu)}"
@@ -445,7 +445,7 @@ STATE_TICKER_FACTS = [
  "Washington grows more apples than any other state 🍎",
  "The Yakima Valley grows most of the hops used in American beer 🍺",
  "Washington State Ferries runs the largest ferry system in the United States ⛴",
- "Washington has no personal state income tax 💰",
+ "Washington does not tax wages 💰",
  "Grand Coulee Dam is the largest power-producing facility in the United States ⚡",
  "The Hoh Rain Forest gets around 12 feet of rain in a typical year 🌧",
  "The first Starbucks opened at Seattle's Pike Place Market in 1971 ☕",
@@ -610,14 +610,14 @@ def header(up):
     return (f'<header class="hd"><div class="wrap"><nav><a class="logo" href="{up}index.html"><span class="badge"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20 L9 9 L12 13 L15.5 6 L22 20Z" fill="#fff"/><path d="M13.6 9.8 L15.5 6 L17.4 9.8 L16.3 9.2 L15.5 10.2 L14.7 9.2Z" fill="#e8835a"/></svg></span> Washington Information</a>'
             f'<ul class="nl"><li><a href="{up}moving-to-washington/index.html">Moving</a></li><li><a href="{up}visit-washington/index.html">Visiting</a></li>'
             f'<li><a href="{up}regions/index.html">Regions</a></li>'
-            f'<li><a href="{up}counties/index.html">Counties</a></li><li><a href="{up}cities/index.html">Cities A&ndash;Z</a></li></ul></nav></div></header>')
+            f'<li><a href="{up}counties/index.html">Counties</a></li><li><a href="{up}cities/index.html">Cities A&ndash;Z</a></li><li><a href="{up}blog/index.html">Blog</a></li></ul></nav></div></header>')
 
 
 def footer(up, note=''):
     return (f'<footer class="ft"><div class="wrap"><p class="fl"><a href="{up}about/index.html">About</a><a href="{up}contact/index.html">Contact</a>'
             f'<a href="{up}privacy/index.html">Privacy Policy</a><a href="{up}advertise/index.html">Advertise</a><a href="{up}regions/index.html">Regions</a>'
             f'<a href="{up}cities/index.html">Cities</a><a href="{up}counties/index.html">Counties</a><a href="/washington-zip-codes/">ZIP Codes</a>'
-            f'<a href="/washington-area-codes/">Area Codes</a><a href="/washington/">State Facts</a></p>'
+            f'<a href="/washington-area-codes/">Area Codes</a><a href="/washington/">State Facts</a><a href="{up}blog/index.html">Blog</a></p>'
             f'<p>&copy; 2026 Washington Information &mdash; independent resource, not affiliated with the State of Washington.{note}</p></div></footer></body></html>')
 
 
@@ -839,7 +839,7 @@ def city_faq(c, all_cities, county, breg, electric, district):
         fq.append((f"What is the ZIP code for {name}, Washington?", a, None))
     if c.get('incorporated'):
         fq.append((f"When was {name}, Washington incorporated?", f"{name} was incorporated as a {c.get('type', 'city')} in {c['incorporated']}.", None))
-    a = ("Washington has no personal state income tax, but it has a 6.5% state sales tax plus local sales tax (combined rates of roughly 7.6% to 10.6%), "
+    a = ("Washington does not tax wages, but it has a 6.5% state sales tax plus local sales tax (combined rates of roughly 7.6% to 10.6%), "
          f"and housing is the biggest cost difference between communities. {name} is in the {breg} region.")
     fq.append((f"What is the cost of living in {name}, Washington?", a + " See the cost of living section of our Moving to Washington guide.",
                e(a) + f' See the <a href="{COST_GUIDE}">cost of living section of our Moving to Washington guide</a>.'))
@@ -859,7 +859,7 @@ def city_faq(c, all_cities, county, breg, electric, district):
 def faq_for(city, county, region, electric):
     k = sum(ord(c) for c in city) % 3
     q = [
-     (f"What is the cost of living in {city}, Washington?", f"{city} lies in the {region} region, where costs vary mainly by housing. Washington has no personal state income tax but does charge sales tax."),
+     (f"What is the cost of living in {city}, Washington?", f"{city} lies in the {region} region, where costs vary mainly by housing. Washington does not tax wages but does charge sales tax."),
      (f"What utilities do I set up when moving to {city}?", f"Electricity in this area is generally provided by {electric} (confirm by address); natural gas, where available, by Puget Sound Energy, Cascade Natural Gas, Avista or NW Natural. Water, sewer, and trash are typically arranged through the City of {city}."),
      (f"How do I find a job near {city}?", "WorkSource Washington offers free job search help, career coaching and job listings."),
      (f"Which schools serve families in {city}?", f"Assignment depends on your exact address. Start with the OSPI school directory or the local school district office."),
@@ -1608,7 +1608,7 @@ def state_page():
             + '''<h2 class="st">Economy</h2><section class="prose">
 <p>Washington&rsquo;s economy spans technology, aerospace, trade, agriculture and tourism. Microsoft and Amazon are headquartered in the Seattle area, Boeing builds commercial jets at plants in Everett and Renton, and the ports of Seattle and Tacoma handle a large share of the nation&rsquo;s trade with Asia. Health care, research (including Pacific Northwest National Laboratory in Richland) and the military, with Joint Base Lewis-McChord and naval bases around Puget Sound, are also major employers.</p>
 <p>East of the Cascades, agriculture leads: Washington grows more apples than any other state, along with most of the nation&rsquo;s hops and large crops of cherries, pears, potatoes and wheat, and it is the country&rsquo;s second-largest wine producer. Hydroelectric dams on the Columbia, including Grand Coulee, supply much of the state&rsquo;s electricity.</p>
-<p>Washington has <strong>no personal state income tax</strong>. Instead the state relies heavily on sales tax (6.5% statewide, plus local sales taxes) and the business and occupation (B&amp;O) tax, and it taxes large long-term capital gains.</p>
+<p>Washington has <strong>no income tax on wages</strong>, although a 9.9% tax on personal income above $1 million, signed in 2026, is scheduled to start in 2028 and is being challenged in court. The state relies heavily on sales tax (6.5% statewide, plus local sales taxes) and the business and occupation (B&amp;O) tax, and it taxes large long-term capital gains.</p>
 </section>'''
             + '''<h2 class="st">History</h2><section class="prose">
 <p>People have lived in what is now Washington for thousands of years, and today 29 federally recognized tribes are based in the state, including the Yakama, Colville, Puyallup, Tulalip, Muckleshoot, Spokane and Makah. Spanish and British navigators explored the coast in the late 1700s, and Lewis and Clark followed the Columbia River to the Pacific in 1805.</p>
