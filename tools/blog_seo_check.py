@@ -118,7 +118,7 @@ def check(slug, strict=True):
     for u in set(internal):
         p = u.split('#')[0]
         if p.startswith('../'): p = '/' + re.sub(r'^(\.\./)+', '', p)
-        f = os.path.join(ROOT, p.lstrip('/'))
+        f = os.path.join(ROOT, 'public', p.lstrip('/'))
         if p.endswith('/'): f = os.path.join(f, 'index.html')
         if p and not os.path.exists(f): P(f'internal link {u} points to a page that does not exist')
     trusted = [u for u in external if any(t in u for t in TRUSTED)]
@@ -147,7 +147,7 @@ def check(slug, strict=True):
     if re.search(r'\bTODO\b|\[citation needed\]|XX+', body): P('remove TODO / placeholder text')
 
     # ---- built page
-    page = os.path.join(ROOT, 'blog', slug, 'index.html')
+    page = os.path.join(ROOT, 'public', 'blog', slug, 'index.html')
     if not os.path.exists(page):
         P('built page blog/<slug>/index.html missing; run the build')
     else:
@@ -160,8 +160,8 @@ def check(slug, strict=True):
             if t not in types: P(f'built page is missing {t} structured data')
         if f'<link rel="canonical" href="https://washingtoninformation.com/blog/{slug}/">' not in h: P('canonical tag missing or wrong')
         if len(re.findall(r'<h1', h)) != 1: P('built page must have exactly one <h1>')
-        if f'/blog/{slug}/' not in open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8').read(): P('article missing from sitemap.xml')
-        if f'/blog/{slug}/' not in open(os.path.join(ROOT, 'blog', 'index.html'), encoding='utf-8').read(): P('article missing from /blog/ index')
+        if f'/blog/{slug}/' not in open(os.path.join(ROOT, 'public', 'sitemap.xml'), encoding='utf-8').read(): P('article missing from sitemap.xml')
+        if f'/blog/{slug}/' not in open(os.path.join(ROOT, 'public', 'blog', 'index.html'), encoding='utf-8').read(): P('article missing from /blog/ index')
     return probs, warns
 
 

@@ -128,7 +128,7 @@ def article_page(a, body, all_arts):
                 if related else '')
     title_tag = a.get('seo_title') or f'{a["title"]} | {SITE_NAME}'
     fig = ''
-    if a.get('image'):
+    if a.get('image') and a['image'] not in body:   # skip when the body already opens with this photo
         credit = (f'<small>Photo: <a href="{e(a["image_page"])}" target="_blank" rel="noopener">{e(a.get("image_credit", "Wikimedia Commons"))}</a></small>'
                   if a.get('image_page') else '')
         fig = (f'<figure class="post-hero"><img src="{e(a["image"])}" alt="{e(a.get("image_alt") or a["title"])}" width="960" height="540" '
