@@ -11,7 +11,7 @@ Google's helpful-content and E-E-A-T standards are the bar: answer the search be
 
 ## 1. Choose the topic and keywords (OpenSEO + web search)
 
-Use the OpenSEO tools (market US/English).
+Use the OpenSEO tools (project `f560250c-8ed6-4255-955e-dce0b623713d` = washingtoninformation.com, market US/English).
 Budget: about 150-400 OpenSEO credits per article. Never start a batch over 2,000 credits.
 
 1. **Read `docs/blog/topics.md`** (backlog + published list) and the `keywords` of every article in
