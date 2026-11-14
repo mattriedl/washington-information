@@ -18,7 +18,7 @@ python3 data/build_schools.py                  # NCES public schools by city
 ```
 
 ## Preview / deploy
-Cloudflare Pages: connect this repo, framework preset **None**, build command empty, output directory `/`.
+Every push to `main` runs `.github/workflows/deploy-cloudflare.yml`, which copies the public files into `dist/` and publishes them to Cloudflare Workers with `wrangler deploy` (preview at `washington-information.<account>.workers.dev`). It needs the repository secret `CLOUDFLARE_API_TOKEN` and does nothing until that is set.
 
 ## Before launch
 - Set `ANALYTICS_ID` in `generate_city_pages.py` to the site's GA4 ID.

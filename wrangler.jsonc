@@ -1,0 +1,12 @@
+// washingtoninformation.com is published as static files on Cloudflare Workers.
+// GitHub Actions (.github/workflows/deploy-cloudflare.yml) copies the public pages into ./dist
+// and runs `wrangler deploy` on every push to main.
+{
+  "name": "washington-information",
+  "account_id": "85d2ba69d7730294ed5758d25f277d23",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash"
+  }
+}
