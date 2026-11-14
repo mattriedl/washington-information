@@ -185,12 +185,12 @@ def index_page(arts):
 
 
 MINI_CSS = ('<style>.bm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin:28px 0}'
-            '.bm-card{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid #e3eae6;border-top:4px solid #1a5632;border-radius:10px;'
-            'padding:22px;text-decoration:none;color:#22302b;transition:transform .15s ease,box-shadow .15s ease}'
-            '.bm-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(20,56,42,.12)}'
-            '.bm-cat{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:700;color:#9a7a2c}'
-            '.bm-card h3{font-size:1.12rem;color:#14382a;margin:0}.bm-card p{font-size:.92rem;color:#5c6b64;flex:1;margin:0}'
-            '.bm-more{color:#1f4e79;font-weight:700;font-size:.9rem}.bm-all a{color:#1f4e79;font-weight:700}</style>')
+            '.bm-card{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid #dfe7ec;border-top:4px solid #1f6f6b;border-radius:10px;'
+            'padding:22px;text-decoration:none;color:#1d2b33;transition:transform .15s ease,box-shadow .15s ease}'
+            '.bm-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(14,42,59,.12)}'
+            '.bm-cat{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:700;color:#b85c38}'
+            '.bm-card h3{font-size:1.12rem;color:#0e2a3b;margin:0}.bm-card p{font-size:.92rem;color:#5b6b75;flex:1;margin:0}'
+            '.bm-more{color:#1d5d8f;font-weight:700;font-size:.9rem}.bm-all a{color:#1d5d8f;font-weight:700}</style>')
 
 
 def mini_cards(arts, title, sub):

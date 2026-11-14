@@ -334,7 +334,7 @@ STATE_FACTS = [
  ('No income tax','Washington levies no personal state income tax (a tax on large capital gains applies)'),
 ]
 
-CSS = ":root{--gd:#14382a;--g:#1a5632;--gold:#c8a24b;--blue:#1f4e79;--bg:#f6f8f7;--tx:#22302b;--mu:#5c6b64}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',system-ui,sans-serif;color:var(--tx);line-height:1.6;background:#fff}h1,h2,h3{font-family:Georgia,serif;line-height:1.25}.wrap{max-width:1000px;margin:0 auto;padding:0 24px}.hd{background:var(--gd);color:#fff;padding:14px 0;position:sticky;top:0;z-index:50}.hd nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;color:#fff;text-decoration:none}.badge{width:30px;height:30px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center}.nl{list-style:none;display:flex;gap:16px;flex-wrap:wrap}.nl a{color:#dbe7e0;text-decoration:none;font-weight:600;font-size:.9rem}.nl a:hover{color:var(--gold)}.hero{background:linear-gradient(160deg,var(--gd),var(--g));color:#fff;padding:52px 0 44px;margin-bottom:36px}.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);max-width:760px}.hero p{color:#dceee3;margin-top:12px;max-width:640px}.crumbs{font-size:.88rem;color:var(--mu);padding:14px 0 0}.crumbs a{color:var(--blue);text-decoration:none}h2.st{font-size:1.45rem;color:var(--gd);margin:36px 0 16px;border-bottom:3px solid var(--g);padding-bottom:8px}.facts{background:var(--bg);border:1px solid #e3eae6;border-radius:10px;padding:20px;margin:24px 0}.facts table{width:100%;border-collapse:collapse}.facts th{text-align:left;padding:9px;color:var(--gd);border-bottom:2px solid var(--g);width:35%;vertical-align:top}.facts td{padding:9px;border-bottom:1px solid #e3eae6}.facts a,.prose a,.tbl a{color:var(--blue)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:24px 0}.card{background:#fff;border:1px solid #e3eae6;border-top:4px solid var(--g);border-radius:10px;padding:20px}.card h3{font-size:1rem;color:var(--gd);margin-bottom:10px}.card ul{list-style:none}.card li{padding:6px 0;border-bottom:1px dashed #e3eae6;font-size:.92rem}.card a{color:var(--blue);text-decoration:none;font-weight:600}.faq details{background:#fff;border:1px solid #e3eae6;border-radius:8px;margin:9px 0;padding:0 16px}.faq summary{cursor:pointer;font-weight:600;padding:13px 0;color:var(--gd)}.faq p{padding:0 0 14px;font-size:.94rem}.faq ul{padding-left:20px}.faq li{padding:3px 0}.faq a{color:var(--blue)}.back{margin-top:40px;padding-top:18px;border-top:1px solid #e3eae6}.back a{color:var(--g);font-weight:700;text-decoration:none}.ft{background:var(--gd);color:#cfe0d6;padding:30px 0;text-align:center;font-size:.84rem;margin-top:44px}.ft a{color:#fff;text-decoration:none;font-weight:600}.ft .fl{margin-bottom:10px}.ft .fl a{margin:0 9px}.dir-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:16px 0 26px}.dir-list a{background:var(--bg);border:1px solid #d7e2db;border-radius:6px;padding:10px 14px;text-decoration:none;color:var(--blue);font-weight:600;font-size:.9rem}.dir-list a small{display:block;color:var(--mu);font-weight:400;font-size:.78rem}.dir-list a:hover{background:var(--g);color:#fff}.dir-list a:hover small{color:#dceee3}.photo{margin:24px 0}.photo img{width:100%;max-height:440px;object-fit:cover;border-radius:10px;background:var(--bg)}.photo figcaption,.src{font-size:.8rem;color:var(--mu);margin-top:6px}.src a{color:var(--mu)}.prose p{margin:0 0 14px}.tbl{width:100%;border-collapse:collapse;margin:16px 0;font-size:.93rem}.tbl th{background:var(--gd);color:#fff;text-align:left;padding:9px}.tbl td{padding:9px;border-bottom:1px solid #e3eae6}.tbl tr:nth-child(even) td{background:var(--bg)}.alpha{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 20px}.alpha a{background:var(--gd);color:#fff;text-decoration:none;font-weight:700;padding:6px 11px;border-radius:5px}.alpha a:hover{background:var(--gold)}h3.letter{font-size:1.3rem;color:var(--gd);margin-top:22px;scroll-margin-top:80px}#q{width:100%;padding:12px 14px;font-size:1rem;border:2px solid #d7e2db;border-radius:8px}.gallery{display:grid;gap:14px;margin:20px 0 10px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}.gallery.g1{display:flex}.gallery.g1 figure{width:fit-content;max-width:min(100%,560px)}.gallery figure{background:var(--bg);border:1px solid #e3eae6;border-radius:10px;overflow:hidden}.gallery img{width:100%;height:210px;object-fit:cover;display:block}.gallery.g1 img{width:auto;max-width:100%;height:auto;max-height:480px}.gallery figcaption{font-size:.82rem;color:var(--tx);padding:8px 10px;line-height:1.35}.gallery figcaption small{color:var(--mu);font-size:.74rem}.gallery figcaption a{color:var(--mu)}"
+CSS = ":root{--gd:#0e2a3b;--g:#1f6f6b;--gold:#e8835a;--blue:#1d5d8f;--bg:#f2f6f8;--tx:#1d2b33;--mu:#5b6b75}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Source Sans 3',system-ui,sans-serif;color:var(--tx);line-height:1.6;background:#fff}h1,h2,h3{font-family:'Outfit',system-ui,sans-serif;line-height:1.25}.wrap{max-width:1000px;margin:0 auto;padding:0 24px}.hd{background:var(--gd);color:#fff;padding:14px 0;position:sticky;top:0;z-index:50}.hd nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;color:#fff;text-decoration:none}.badge{width:30px;height:30px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center}.nl{list-style:none;display:flex;gap:16px;flex-wrap:wrap}.nl a{color:#dbe7ee;text-decoration:none;font-weight:600;font-size:.9rem}.nl a:hover{color:var(--gold)}.hero{background:linear-gradient(160deg,var(--gd),var(--g));color:#fff;padding:52px 0 44px;margin-bottom:36px}.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);max-width:760px}.hero p{color:#d9e9f0;margin-top:12px;max-width:640px}.crumbs{font-size:.88rem;color:var(--mu);padding:14px 0 0}.crumbs a{color:var(--blue);text-decoration:none}h2.st{font-size:1.45rem;color:var(--gd);margin:36px 0 16px;border-bottom:3px solid var(--g);padding-bottom:8px}.facts{background:var(--bg);border:1px solid #dfe7ec;border-radius:10px;padding:20px;margin:24px 0}.facts table{width:100%;border-collapse:collapse}.facts th{text-align:left;padding:9px;color:var(--gd);border-bottom:2px solid var(--g);width:35%;vertical-align:top}.facts td{padding:9px;border-bottom:1px solid #dfe7ec}.facts a,.prose a,.tbl a{color:var(--blue)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:24px 0}.card{background:#fff;border:1px solid #dfe7ec;border-top:4px solid var(--g);border-radius:10px;padding:20px}.card h3{font-size:1rem;color:var(--gd);margin-bottom:10px}.card ul{list-style:none}.card li{padding:6px 0;border-bottom:1px dashed #dfe7ec;font-size:.92rem}.card a{color:var(--blue);text-decoration:none;font-weight:600}.faq details{background:#fff;border:1px solid #dfe7ec;border-radius:8px;margin:9px 0;padding:0 16px}.faq summary{cursor:pointer;font-weight:600;padding:13px 0;color:var(--gd)}.faq p{padding:0 0 14px;font-size:.94rem}.faq ul{padding-left:20px}.faq li{padding:3px 0}.faq a{color:var(--blue)}.back{margin-top:40px;padding-top:18px;border-top:1px solid #dfe7ec}.back a{color:var(--g);font-weight:700;text-decoration:none}.ft{background:var(--gd);color:#cfdde6;padding:30px 0;text-align:center;font-size:.84rem;margin-top:44px}.ft a{color:#fff;text-decoration:none;font-weight:600}.ft .fl{margin-bottom:10px}.ft .fl a{margin:0 9px}.dir-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:16px 0 26px}.dir-list a{background:var(--bg);border:1px solid #d3dfe6;border-radius:6px;padding:10px 14px;text-decoration:none;color:var(--blue);font-weight:600;font-size:.9rem}.dir-list a small{display:block;color:var(--mu);font-weight:400;font-size:.78rem}.dir-list a:hover{background:var(--g);color:#fff}.dir-list a:hover small{color:#d9e9f0}.photo{margin:24px 0}.photo img{width:100%;max-height:440px;object-fit:cover;border-radius:10px;background:var(--bg)}.photo figcaption,.src{font-size:.8rem;color:var(--mu);margin-top:6px}.src a{color:var(--mu)}.prose p{margin:0 0 14px}.tbl{width:100%;border-collapse:collapse;margin:16px 0;font-size:.93rem}.tbl th{background:var(--gd);color:#fff;text-align:left;padding:9px}.tbl td{padding:9px;border-bottom:1px solid #dfe7ec}.tbl tr:nth-child(even) td{background:var(--bg)}.alpha{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 20px}.alpha a{background:var(--gd);color:#fff;text-decoration:none;font-weight:700;padding:6px 11px;border-radius:5px}.alpha a:hover{background:var(--gold)}h3.letter{font-size:1.3rem;color:var(--gd);margin-top:22px;scroll-margin-top:80px}#q{width:100%;padding:12px 14px;font-size:1rem;border:2px solid #d3dfe6;border-radius:8px}.gallery{display:grid;gap:14px;margin:20px 0 10px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}.gallery.g1{display:flex}.gallery.g1 figure{width:fit-content;max-width:min(100%,560px)}.gallery figure{background:var(--bg);border:1px solid #dfe7ec;border-radius:10px;overflow:hidden}.gallery img{width:100%;height:210px;object-fit:cover;display:block}.gallery.g1 img{width:auto;max-width:100%;height:auto;max-height:480px}.gallery figcaption{font-size:.82rem;color:var(--tx);padding:8px 10px;line-height:1.35}.gallery figcaption small{color:var(--mu);font-size:.74rem}.gallery figcaption a{color:var(--mu)}"
 
 CSS += (
  # cards, headings, tables, hero
@@ -342,33 +342,33 @@ CSS += (
  ".card ul li:last-child{border-bottom:none}.card li small{display:block;color:var(--mu);font-weight:400;font-size:.82rem;line-height:1.4}"
  ".dir-list a{transition:all .2s}.dir-list a:hover{background:var(--g);color:#fff;transform:translateY(-1px)}"
  "h2.st{position:relative;padding-left:14px}h2.st:before{content:'';position:absolute;left:0;top:2px;bottom:10px;width:5px;border-radius:3px;background:var(--gold)}"
- ".facts tr:nth-child(even) th,.facts tr:nth-child(even) td{background:#eef3f0}"
+ ".facts tr:nth-child(even) th,.facts tr:nth-child(even) td{background:#eaf1f4}"
  # hero variants: city / region / Washington state
  ".city-hero,.region-hero{position:relative;overflow:hidden}.city-hero .wrap,.region-hero .wrap,.or-hero .wrap{position:relative;z-index:2}"
- ".hero p.city-tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(1.05rem,2.2vw,1.3rem);color:#f3e2b3;margin-top:10px;max-width:720px}"
- ".region-hero .hero-sub{color:#dceee3}"
+ ".hero p.city-tagline{font-family:'Outfit',system-ui,sans-serif;font-style:italic;font-size:clamp(1.05rem,2.2vw,1.3rem);color:#ffd2bd;margin-top:10px;max-width:720px}"
+ ".region-hero .hero-sub{color:#d9e9f0}"
  ".pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pill{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;"
  "padding:5px 13px;border-radius:999px;font-size:.84rem;font-weight:600;backdrop-filter:blur(2px)}.pill a{color:#fff}"
  ".or-sil{position:absolute;right:3%;top:50%;transform:translateY(-50%);width:340px;max-width:45%;height:auto;opacity:.5;z-index:1;pointer-events:none}"
  ".or-hero{position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center;color:#fff;margin-bottom:36px;padding:72px 0 64px;"
- "background:radial-gradient(ellipse at 75% 30%,rgba(200,162,75,.35),transparent 55%),linear-gradient(135deg,#0b2418 0%,#14382a 40%,#1f4e79 100%)}"
+ "background:radial-gradient(ellipse at 75% 30%,rgba(232,131,90,.35),transparent 55%),linear-gradient(135deg,#081c28 0%,#0e2a3b 40%,#1d5d8f 100%)}"
  ".or-hero .wrap{width:100%}.or-sil-lg{width:440px;max-width:42%;right:4%;opacity:.6}"
  ".or-hero h1{font-size:clamp(2rem,5.5vw,3.4rem);max-width:720px;text-shadow:0 2px 12px rgba(0,0,0,.35)}"
  ".or-eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:14px}"
- ".or-sub{color:#dceee3;font-size:clamp(1rem,2vw,1.18rem);margin-top:16px;max-width:620px}"
+ ".or-sub{color:#d9e9f0;font-size:clamp(1rem,2vw,1.18rem);margin-top:16px;max-width:620px}"
  ".or-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}"
  ".btn-cta,.btn-ghost{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:700;text-decoration:none;transition:all .2s}"
- ".btn-cta{background:var(--gold);color:#14382a}.btn-cta:hover{background:#e0bb5e;transform:translateY(-2px)}"
+ ".btn-cta{background:var(--gold);color:#0e2a3b}.btn-cta:hover{background:#f19a75;transform:translateY(-2px)}"
  ".btn-ghost{border:2px solid rgba(255,255,255,.7);color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}"
  "@media(max-width:700px){.or-sil{opacity:.2;max-width:80%;right:-20px}.or-hero{min-height:360px}}"
  # quick facts + map
  ".qf{display:flex;gap:20px;align-items:flex-start;margin:24px 0}.qf .facts{flex:1;min-width:0;margin:0}"
- ".ormap{flex:0 0 216px;background:var(--bg);border:1px solid #e3eae6;border-radius:10px;padding:8px;text-align:center}"
+ ".ormap{flex:0 0 216px;background:var(--bg);border:1px solid #dfe7ec;border-radius:10px;padding:8px;text-align:center}"
  ".ormap svg{display:block;width:200px;height:160px}.ormap figcaption{font-size:.8rem;color:var(--mu);margin-top:4px}"
  # ticker (pure CSS)
- ".ticker{background:var(--gd);border-top:1px solid #2c5a45;border-bottom:1px solid #0b241a;overflow:hidden;white-space:nowrap;font-size:.85rem}"
+ ".ticker{background:var(--gd);border-top:1px solid #22495c;border-bottom:1px solid #071722;overflow:hidden;white-space:nowrap;font-size:.85rem}"
  ".ticker-track{display:inline-block;padding:7px 0;animation:scroll-left 1500s linear infinite;will-change:transform}"
- ".ticker-track:hover{animation-play-state:paused}.ticker-track span{color:var(--gold);padding:0 26px;border-right:1px solid #2c5a45}"
+ ".ticker-track:hover{animation-play-state:paused}.ticker-track span{color:var(--gold);padding:0 26px;border-right:1px solid #22495c}"
  "@keyframes scroll-left{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}"
  "@media(prefers-reduced-motion:reduce){.ticker-track{animation-play-state:paused}}"
  # travel alerts banner
@@ -379,25 +379,25 @@ CSS += (
  "#ab-live{margin-top:12px}#ab-live:empty{display:none}#ab-live p{margin:4px 0}#ab-live .ab-note{font-size:.78rem;color:var(--mu)}"
  # mobile
  "@media(max-width:600px){.cards{grid-template-columns:1fr}.hero{padding:40px 0 32px}.qf{flex-direction:column}.ormap{align-self:center}"
- ".wrap{padding:0 16px}.nl{gap:10px}.facts{padding:12px}.facts th{width:auto}.facts th,.facts td{display:block;border-bottom:none;padding:4px 6px}.facts td{border-bottom:1px solid #e3eae6;padding-bottom:9px}"
+ ".wrap{padding:0 16px}.nl{gap:10px}.facts{padding:12px}.facts th{width:auto}.facts th,.facts td{display:block;border-bottom:none;padding:4px 6px}.facts td{border-bottom:1px solid #dfe7ec;padding-bottom:9px}"
  "#alerts-bar summary,#alerts-bar .ab{padding-left:16px;padding-right:16px}}"
  # weather widget
- ".wx-card{background:#fff;border:1px solid #e3eae6;border-top:4px solid #1f4e79;border-radius:10px;padding:20px;margin:24px 0}"
+ ".wx-card{background:#fff;border:1px solid #dfe7ec;border-top:4px solid #1d5d8f;border-radius:10px;padding:20px;margin:24px 0}"
  ".wx-card h3{font-size:1rem;color:var(--gd);margin-bottom:12px}"
  ".wx-loading{color:var(--mu);font-size:.9rem}"
- ".wx-cur{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e3eae6}"
+ ".wx-cur{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #dfe7ec}"
  ".wx-icon{font-size:2.6rem;line-height:1}.wx-temp{font-size:2rem;font-weight:700;color:var(--gd)}"
  ".wx-cond{font-size:1rem;color:var(--tx)}.wx-wind,.wx-humid{font-size:.88rem;color:var(--mu)}"
  ".wx-forecast{display:flex;gap:8px;flex-wrap:wrap}"
- ".wx-day{background:var(--bg);border:1px solid #e3eae6;border-radius:8px;padding:8px 10px;text-align:center;min-width:54px;flex:1}"
+ ".wx-day{background:var(--bg);border:1px solid #dfe7ec;border-radius:8px;padding:8px 10px;text-align:center;min-width:54px;flex:1}"
  ".wx-day-name{font-size:.78rem;font-weight:700;color:var(--gd)}.wx-day-icon{font-size:1.4rem;margin:4px 0}"
  ".wx-day-hi{font-size:.9rem;font-weight:700;color:var(--tx)}.wx-day-lo{font-size:.82rem;color:var(--mu)}"
  ".wx-attr{font-size:.74rem;color:var(--mu);margin-top:10px}"
  ".wx-attr a{color:var(--mu)}"
  # voter registration card
- ".vote-card{background:#fff;border:1px solid #e3eae6;border-top:4px solid var(--gold);border-radius:10px;padding:20px}"
+ ".vote-card{background:#fff;border:1px solid #dfe7ec;border-top:4px solid var(--gold);border-radius:10px;padding:20px}"
  ".vote-card h3{font-size:1rem;color:var(--gd);margin-bottom:10px}"
- ".vote-card ul{list-style:none}.vote-card li{padding:6px 0;border-bottom:1px dashed #e3eae6;font-size:.92rem}"
+ ".vote-card ul{list-style:none}.vote-card li{padding:6px 0;border-bottom:1px dashed #dfe7ec;font-size:.92rem}"
  ".vote-card li:last-child{border-bottom:none}.vote-card a{color:var(--blue);text-decoration:none;font-weight:600}"
  # region link (city pages) + did-you-know (county pages)
  "a.pill{text-decoration:none}a.pill:hover{background:rgba(255,255,255,.25)}.region-link{margin:6px 0 0;font-size:.92rem}.region-link a{color:var(--g);font-weight:700;text-decoration:none}"
@@ -407,16 +407,34 @@ CSS += (
  ".post h2{font-size:1.45rem;color:var(--gd);margin:38px 0 14px;border-bottom:3px solid var(--g);padding-bottom:8px}"
  ".post h3{font-size:1.15rem;color:var(--gd);margin:26px 0 10px}.post ul,.post ol{padding-left:22px;margin:0 0 16px}.post li{padding:3px 0}"
  ".post a{color:var(--blue)}.post .lede{font-size:1.14rem;color:var(--tx)}.post .tbl{font-size:.92rem}@media(max-width:700px){.tbl{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}.tbl th,.tbl td{min-width:90px}}"
- ".toc{background:#fff;border:1px solid #e3eae6;border-radius:8px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;columns:2;column-gap:28px}.toc li{padding:2px 0;font-size:.93rem;break-inside:avoid}@media(max-width:600px){.toc ol{columns:1}}.post h2[id]{scroll-margin-top:80px}"
-    ".callout{background:var(--bg);border:1px solid #e3eae6;border-left:5px solid var(--gold);border-radius:8px;padding:16px 18px;margin:22px 0}.callout p:last-child{margin:0}"
+ ".toc{background:#fff;border:1px solid #dfe7ec;border-radius:8px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;columns:2;column-gap:28px}.toc li{padding:2px 0;font-size:.93rem;break-inside:avoid}@media(max-width:600px){.toc ol{columns:1}}.post h2[id]{scroll-margin-top:80px}"
+    ".callout{background:var(--bg);border:1px solid #dfe7ec;border-left:5px solid var(--gold);border-radius:8px;padding:16px 18px;margin:22px 0}.callout p:last-child{margin:0}"
  ".town-facts{font-size:.88rem;color:var(--mu);margin:-4px 0 12px}"
- ".visit-card{background:var(--bg);border:1px solid #e3eae6;border-left:5px solid var(--g);border-radius:8px;padding:12px 16px;margin:-4px 0 18px;font-size:.93rem;display:flex;flex-wrap:wrap;gap:4px 18px}"
+ ".visit-card{background:var(--bg);border:1px solid #dfe7ec;border-left:5px solid var(--g);border-radius:8px;padding:12px 16px;margin:-4px 0 18px;font-size:.93rem;display:flex;flex-wrap:wrap;gap:4px 18px}"
  ".visit-card strong{flex-basis:100%;color:var(--gd)}.visit-card span{white-space:normal}.visit-card a{color:var(--blue);font-weight:600;text-decoration:none}.visit-card a:hover{text-decoration:underline}"
- ".cta-box{background:linear-gradient(135deg,#0b2418 0%,#14382a 45%,#1f4e79 100%);color:#fff;border-radius:12px;padding:28px;margin:36px 0 10px}"
- ".cta-box h2{color:#fff;border:none;margin:0 0 10px;padding:0}.cta-box p{color:#dceee3}.cta-box .btn-cta{margin-top:6px}.cta-box .btn-ghost{margin:6px 0 0 8px}"
- ".post-card{display:flex;flex-direction:column;text-decoration:none;color:inherit}.post-card .pc-cat{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:700;color:#9a7a2c}"
+ ".cta-box{background:linear-gradient(135deg,#081c28 0%,#0e2a3b 45%,#1d5d8f 100%);color:#fff;border-radius:12px;padding:28px;margin:36px 0 10px}"
+ ".cta-box h2{color:#fff;border:none;margin:0 0 10px;padding:0}.cta-box p{color:#d9e9f0}.cta-box .btn-cta{margin-top:6px}.cta-box .btn-ghost{margin:6px 0 0 8px}"
+ ".post-card{display:flex;flex-direction:column;text-decoration:none;color:inherit}.post-card .pc-cat{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:700;color:#b85c38}"
  ".post-card h3{font-size:1.15rem;margin:8px 0}.post-card p{font-size:.93rem;color:var(--tx);flex:1}.post-card .pc-date{font-size:.82rem;color:var(--mu);margin-top:12px}"
  ".post-card .pc-more{color:var(--blue);font-weight:700;font-size:.9rem;margin-top:6px}"
+)
+
+CSS += ( # ---- Washington theme (Puget Sound navy, evergreen teal, salmon/Rainier-sunrise coral, sans-serif headings)
+ "h1,h2,h3{letter-spacing:-.01em;font-weight:700}body{font-size:1.02rem}"
+ ".hd{background:#fff;color:var(--gd);border-bottom:3px solid var(--g);box-shadow:0 2px 12px rgba(14,42,59,.08);padding:12px 0}"
+ ".logo{color:var(--gd);font-family:'Outfit',system-ui,sans-serif;font-size:1.2rem;letter-spacing:-.01em}.logo .badge{background:var(--gd);width:34px;height:34px;border-radius:9px}"
+ ".nl a{color:var(--gd);font-weight:600}.nl a:hover{color:var(--gold)}"
+ ".hero,.or-hero{position:relative;padding-bottom:84px}.hero:after,.or-hero:after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:72px;background:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 90' preserveAspectRatio='none'><path fill='%23ffffff' fill-opacity='.18' d='M0 70 L180 40 L300 58 L470 22 L600 50 L700 30 L760 8 L800 4 L840 10 L900 32 L1040 46 L1180 26 L1320 52 L1440 34 V90 H0Z'/><path fill='%23ffffff' d='M0 84 L140 66 L260 76 L420 52 L560 72 L700 56 L860 74 L1000 60 L1160 78 L1300 64 L1440 74 V90 H0Z'/></svg>\") bottom/100% 100% no-repeat;pointer-events:none;z-index:1}"
+ ".hero{background:linear-gradient(160deg,#0e2a3b 0%,#174a5c 55%,#1f6f6b 100%);margin-bottom:24px}"
+ ".or-hero{background:radial-gradient(ellipse at 80% 20%,rgba(232,131,90,.32),transparent 55%),linear-gradient(160deg,#081c28 0%,#0e2a3b 45%,#1f6f6b 100%)}"
+ ".hero p.city-tagline{font-family:'Source Sans 3',system-ui,sans-serif;font-style:normal;font-weight:600}"
+ ".or-eyebrow{color:#ffb596}.btn-cta,.btn-ghost{border-radius:999px}.btn-cta{color:#fff}.btn-cta:hover{color:#fff}"
+ "h2.st{border-bottom:none;padding:0 0 12px;padding-left:0}h2.st:before{display:none}h2.st:after{content:'';display:block;width:64px;height:4px;border-radius:2px;background:var(--gold);margin-top:10px}"
+ ".card{border:1px solid #dfe7ec;border-radius:14px;box-shadow:0 2px 10px rgba(14,42,59,.06)}.card h3{color:var(--g)}"
+ ".facts{border-radius:14px}.facts th{border-bottom-color:#c7d6de}.tbl th{background:var(--g)}.pill{border-radius:8px}"
+ ".dir-list a{border-radius:10px;background:#fff}.dir-list a:hover{background:var(--g)}"
+ ".ticker{background:var(--g);border:none}.ticker-track span{color:#fff;border-right-color:rgba(255,255,255,.25)}"
+ ".ft{background:#081c28;border-top:4px solid var(--gold)}"
 )
 
 STATE_TICKER_FACTS = [
@@ -507,7 +525,7 @@ def state_svg_map(lat, lon, label='City'):
     pts = ' '.join('%.1f,%.1f' % _or_xy(la, lo) for lo, la in OR_OUTLINE)
     x, y = _or_xy(lat, lon)
     return (f'<figure class="ormap"><svg viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="Map of Washington showing the location of {e(label)}">'
-            f'<polygon points="{pts}" fill="#dfeee5" stroke="#1a5632" stroke-width="1.5" stroke-linejoin="round"/>'
+            f'<polygon points="{pts}" fill="#e4eef3" stroke="#1f6f6b" stroke-width="1.5" stroke-linejoin="round"/>'
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="#d62828" stroke="#fff" stroke-width="1.5"><title>{e(label)}</title></circle>'
             f'</svg><figcaption>Location in Washington</figcaption></figure>')
 
@@ -526,7 +544,7 @@ def city_tagline(name, county, region):
 
 
 def hero_style(rname):
-    a, b, _ = REGION_THEME.get(rname, ('#14382a', '#1a5632', ''))
+    a, b, _ = REGION_THEME.get(rname, ('#0e2a3b', '#1f6f6b', ''))
     return f' style="background:linear-gradient(135deg,{a} 0%,{b} 100%)"'
 
 
@@ -583,11 +601,13 @@ def head(title, desc, path, og_type='website', image=None, extra='', up='', keyw
             f'<meta property="og:url" content="{url}"><meta property="og:image" content="{e(img)}">'
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(title)}">'
             f'<meta name="twitter:description" content="{e(desc)}"><meta name="twitter:image" content="{e(img)}">'
+            '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+            '<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">'
             f'{extra}{ga}<style>{CSS}</style></head><body>')
 
 
 def header(up):
-    return (f'<header class="hd"><div class="wrap"><nav><a class="logo" href="{up}index.html"><span class="badge">&#127794;</span> Washington Information</a>'
+    return (f'<header class="hd"><div class="wrap"><nav><a class="logo" href="{up}index.html"><span class="badge"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20 L9 9 L12 13 L15.5 6 L22 20Z" fill="#fff"/><path d="M13.6 9.8 L15.5 6 L17.4 9.8 L16.3 9.2 L15.5 10.2 L14.7 9.2Z" fill="#e8835a"/></svg></span> Washington Information</a>'
             f'<ul class="nl"><li><a href="{up}moving-to-washington/index.html">Moving</a></li><li><a href="{up}visit-washington/index.html">Visiting</a></li>'
             f'<li><a href="{up}regions/index.html">Regions</a></li>'
             f'<li><a href="{up}counties/index.html">Counties</a></li><li><a href="{up}cities/index.html">Cities A&ndash;Z</a></li></ul></nav></div></header>')
@@ -1092,15 +1112,15 @@ def state_county_map(highlight=None, labels=True, width=800):
             cr = xa * yb - xb * ya; a2 += cr; cx += (xa + xb) * cr; cy += (ya + yb) * cr
         cx, cy = (cx / (3 * a2), cy / (3 * a2)) if a2 else pts[0]
         on = name == highlight
-        fill = '#c8a24b' if on else '#e3efe7'
-        paths.append(f'<a href="/counties/{slug(name)}/" aria-label="{e(name)} County"><path d="{d}" fill="{fill}" stroke="#1a5632" stroke-width="1.2">'
+        fill = '#e8835a' if on else '#e4eef3'
+        paths.append(f'<a href="/counties/{slug(name)}/" aria-label="{e(name)} County"><path d="{d}" fill="{fill}" stroke="#1f6f6b" stroke-width="1.2">'
                      f'<title>{e(name)} County</title></path></a>')
         if labels:
             fs = 8 if name in ('San Juan', 'Island', 'Wahkiakum', 'Garfield', 'Columbia', 'Asotin', 'Kitsap', 'Pacific', 'Skamania', 'Cowlitz', 'Mason', 'Thurston') else 11
-            texts.append(f'<text x="{cx:.0f}" y="{cy:.0f}" font-size="{fs}" text-anchor="middle" dominant-baseline="middle" fill="#14382a" '
+            texts.append(f'<text x="{cx:.0f}" y="{cy:.0f}" font-size="{fs}" text-anchor="middle" dominant-baseline="middle" fill="#0e2a3b" '
                          f'font-family="system-ui,sans-serif" font-weight="{700 if on else 600}" pointer-events="none">{e(name)}</text>')
     return (f'<svg viewBox="0 0 {width} {height}" role="img" aria-label="Map of Washington counties" style="width:100%;height:auto;display:block">'
-            f'<style>svg a path:hover{{fill:#c8a24b}}</style>{"".join(paths)}{"".join(texts)}</svg>')
+            f'<style>svg a path:hover{{fill:#e8835a}}</style>{"".join(paths)}{"".join(texts)}</svg>')
 
 
 COUNTY_SITES = {}
@@ -1160,16 +1180,16 @@ def update_counties_index(counties, cities):
                     f'<td>{n(k["pop2020"])}</td><td>{len(members)}</td><td>{e(k.get("est", ""))}</td></tr>')
     table = ('<section><div class="wrap"><h2 class="section-title">Washington Counties Map</h2>'
              '<p class="section-sub">Washington&rsquo;s 39 counties, from San Juan, the smallest by land area, to Okanogan, the largest. Select any county on the map to open its guide.</p>'
-             f'<figure style="max-width:900px;margin:0 auto">{state_county_map()}<figcaption style="font-size:.8rem;color:#5c6b64;margin-top:6px">'
+             f'<figure style="max-width:900px;margin:0 auto">{state_county_map()}<figcaption style="font-size:.8rem;color:#5b6b75;margin-top:6px">'
              'Boundaries: U.S. Census Bureau. Click a county for its seat, population, cities and history.</figcaption></figure></div></section>'
              '<section><div class="wrap"><h2 class="section-title">List of Washington Counties by Population</h2>'
              '<p class="section-sub">All 39 Washington counties ranked by 2020 Census population, with each county seat, the number of incorporated cities and the year the county was established.</p>'
              '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.93rem" class="county-table">'
-             '<thead><tr style="background:#14382a;color:#fff;text-align:left"><th style="padding:9px">#</th><th style="padding:9px">County</th><th style="padding:9px">County seat</th>'
+             '<thead><tr style="background:#0e2a3b;color:#fff;text-align:left"><th style="padding:9px">#</th><th style="padding:9px">County</th><th style="padding:9px">County seat</th>'
              '<th style="padding:9px">Population (2020)</th><th style="padding:9px">Cities</th><th style="padding:9px">Established</th></tr></thead><tbody>'
              + ''.join(rows) + '</tbody></table></div>'
-             '<style>.county-table td{padding:9px;border-bottom:1px solid #e3eae6}.county-table tr:nth-child(even) td{background:#f6f8f7}.county-table a{color:#1f4e79}</style>'
-             '<p style="font-size:.8rem;color:#5c6b64;margin-top:6px">Source: U.S. Census Bureau, 2020 Census.</p></div></section>')
+             '<style>.county-table td{padding:9px;border-bottom:1px solid #dfe7ec}.county-table tr:nth-child(even) td{background:#f2f6f8}.county-table a{color:#1d5d8f}</style>'
+             '<p style="font-size:.8rem;color:#5b6b75;margin-top:6px">Source: U.S. Census Bureau, 2020 Census.</p></div></section>')
     replace_block(f'{OUT}/counties/index.html', 'county-table', table)
     az = ('<div class="alpha-nav">' + ''.join(f'<a href="/counties/{slug(k["name"])}/">{e(k["name"])}</a>'
                                               for k in sorted(counties, key=lambda k: k['name'])) + '</div>')
@@ -1302,11 +1322,13 @@ def cities_index(cities):
 EAST_COUNTIES = {'Adams', 'Asotin', 'Benton', 'Chelan', 'Columbia', 'Douglas', 'Ferry', 'Franklin', 'Garfield', 'Grant', 'Kittitas', 'Klickitat',
                  'Lincoln', 'Okanogan', 'Pend Oreille', 'Spokane', 'Stevens', 'Walla Walla', 'Whitman', 'Yakima'}
 COUNTY_AREA_CODES = {'King': ('206', '253', '425', '360'), 'Pierce': ('253', '360'), 'Snohomish': ('425', '360')}
+CITY_AREA_CODES = {'Seattle': ('206', '564')}   # USPS ZIP records list stray codes for Seattle
 OVERLAY = {'360': '564', '206': '564'}   # 564 overlays 360 (2017) and 206 (2025)
 
 
 def area_codes_for(county, city=None):
     """Area codes for a city (from its USPS ZIP records) or, failing that, its county; 564 overlay added where it applies."""
+    if city in CITY_AREA_CODES: return CITY_AREA_CODES[city]
     allowed = list(COUNTY_AREA_CODES.get(county) or (('509',) if county in EAST_COUNTIES else ('360',)))
     codes = [x for x in (CITY_ZIPS.get(city, {}) if city else {}).get('area_codes') or [] if x in allowed] or allowed
     for x in list(codes):
@@ -1356,7 +1378,7 @@ def zip_page(cities):
             'Search the full list below by ZIP code, city or county, or open any city for its population, schools and moving guide.</p>'
             '<p>Looking for phone numbers instead? See <a href="/washington-area-codes/">Washington area codes</a>.</p></section>'
             f'<h2 class="st">ZIP Codes for Washington&rsquo;s Largest Cities</h2><table class="tbl"><tr><th>City</th><th>Standard ZIP codes</th></tr>{top_rows}</table>'
-            f'<h2 class="st">All {N} Washington ZIP Codes</h2><p style="margin:12px 0 8px"><input id="zq" style="width:100%;padding:12px 14px;font-size:1rem;border:2px solid #d7e2db;border-radius:8px" type="search" placeholder="Search by ZIP code, city or county..." aria-label="Search Washington ZIP codes"></p>'
+            f'<h2 class="st">All {N} Washington ZIP Codes</h2><p style="margin:12px 0 8px"><input id="zq" style="width:100%;padding:12px 14px;font-size:1rem;border:2px solid #d3dfe6;border-radius:8px" type="search" placeholder="Search by ZIP code, city or county..." aria-label="Search Washington ZIP codes"></p>'
             f'<div style="overflow-x:auto"><table class="tbl" id="ziptbl"><thead><tr><th>ZIP code</th><th>City</th><th>County</th><th>Type</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
             '<p class="src">Source: USPS ZIP code data. ZIP codes follow postal routes, not city limits, so an address can carry a city name in its mailing address without being inside that city.</p>' + js)
     first, last = data[0], data[-1]
