@@ -86,5 +86,53 @@
   "page": "https://commons.wikimedia.org/wiki/File:Yakima,_Washington_skyline.jpg",
   "artist": "Quintin Soloviev",
   "license": "CC BY 4.0"
+ },
+ "Candy Cane Lane Panorama.jpg": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Candy_Cane_Lane_Panorama.jpg/960px-Candy_Cane_Lane_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 960,
+  "h": 346,
+  "page": "https://commons.wikimedia.org/wiki/File:Candy_Cane_Lane_Panorama.jpg",
+  "artist": "Ruhrfisch",
+  "license": "CC BY-SA 3.0"
+ },
+ "Front St. Leavenworth, WA at night (panorama).jpg": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Front_St._Leavenworth%2C_WA_at_night_%28panorama%29.jpg/960px-Front_St._Leavenworth%2C_WA_at_night_%28panorama%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 960,
+  "h": 208,
+  "page": "https://commons.wikimedia.org/wiki/File:Front_St._Leavenworth,_WA_at_night_(panorama).jpg",
+  "artist": "Steven Pavlov",
+  "license": "CC BY-SA 3.0"
+ },
+ "Garden d’Lights 2008 at the Bellevue Botanical Garden, img018.jpg": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Garden_d%E2%80%99Lights_2008_at_the_Bellevue_Botanical_Garden%2C_img018.jpg/960px-Garden_d%E2%80%99Lights_2008_at_the_Bellevue_Botanical_Garden%2C_img018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 960,
+  "h": 1280,
+  "page": "https://commons.wikimedia.org/wiki/File:Garden_d%E2%80%99Lights_2008_at_the_Bellevue_Botanical_Garden,_img018.jpg",
+  "artist": "Steven Pavlov",
+  "license": "CC BY 4.0"
+ },
+ "Luminaria and Christmas ship on Lake Washington, 2002.jpg": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Luminaria_and_Christmas_ship_on_Lake_Washington%2C_2002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 960,
+  "h": 1435,
+  "page": "https://commons.wikimedia.org/wiki/File:Luminaria_and_Christmas_ship_on_Lake_Washington,_2002.jpg",
+  "artist": "Seattle Municipal Archives from Seattle, WA",
+  "license": "CC BY 2.0"
+ },
+ "Seattle - Holiday decorations in Westlake Park, 2015 (54198452905).jpg": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Seattle_-_Holiday_decorations_in_Westlake_Park%2C_2015_%2854198452905%29.jpg/960px-Seattle_-_Holiday_decorations_in_Westlake_Park%2C_2015_%2854198452905%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 960,
+  "h": 640,
+  "page": "https://commons.wikimedia.org/wiki/File:Seattle_-_Holiday_decorations_in_Westlake_Park,_2015_(54198452905).jpg",
+  "artist": "Seattle Municipal Archives from Seattle, WA",
+  "license": "CC BY 2.0"
+ },
+ "Seattlechristlights3.jpg": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Seattlechristlights3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 960,
+  "h": 1280,
+  "page": "https://commons.wikimedia.org/wiki/File:Seattlechristlights3.jpg",
+  "artist": "Steverelei",
+  "license": "CC BY-SA 4.0"
  }
 }
