@@ -119,12 +119,23 @@ python3 tools/check_links.py | tail -2                           # every interna
 ```
 
 Then view it like a reader:
-- `python3 -m http.server 8765` in the repo root (background), and load `http://localhost:8765/blog/<slug>/`
-  with Playwright at 390px and 1440px wide: no sideways scrolling, photos load, TOC links jump, FAQ opens.
+- `python3 -m http.server 8765 -d public` (background), and load `http://localhost:8765/blog/<slug>/`
+  with Playwright (`/usr/bin/google-chrome`) at 390px and 1440px wide: no sideways scrolling, photos load,
+  TOC links jump, FAQ opens. Screenshot both widths and look at them.
 - Re-read the whole article once as an editor against your notes: every number, date, price and name.
 - `git status` should show only: the new content file, `data/blog_articles.json`, `docs/blog/topics.md`,
-  rebuilt `blog/` pages, `index.html`, `moving-to-washington/index.html` or `visit-washington/index.html` blocks,
-  city pages that gained a link to the new article, `sitemap.xml` and `data/lastmod.json`.
+  `data/commons_images.json`, and rebuilt files under `public/` (the article, `blog/` index, home page, guide pages,
+  city pages that gained a link to the new article, `sitemap.xml`) plus `data/lastmod.json`.
+
+### Photos without hand-writing credits
+Wikimedia often rate-limits this environment (HTTP 429). Instead of hand-writing figures, put a marker where each
+photo goes: `<!--IMG Exact Commons file name.jpg|alt text|Caption sentence.-->`, and set `"image_file"` (the hero's
+Commons file name) and `"image_alt"` in the article's metadata. Then run `python3 tools/resolve_blog_images.py
+--wait-minutes 10`: it looks up each file's 960px thumbnail, author and license (retrying through rate limits),
+caches them in `data/commons_images.json`, and turns the markers into credited `<figure>` blocks. Find candidate
+files with web search restricted to commons.wikimedia.org, or with Wikidata image (P18) values. If any marker is still
+unresolved after the wait, swap in a different photo that is already cached, or remove that marker. Never publish a
+page with a leftover `<!--IMG` marker or a guessed license.
 
 ## 5. Publish
 
@@ -133,8 +144,17 @@ Then view it like a reader:
   Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
   Claude-Session: <this session's URL>
   ```
-  Use `git -c user.name="Matt Riedl" -c user.email="mattriedl@hotmail.com"`. Push to `main`
-  (pushing deploys the live site; it takes about 5-15 minutes).
-- Poll `https://washingtoninformation.com/blog/<slug>/` (add `?v=N` to bypass caches) until it returns 200 with the new title.
-- Notify search engines: OpenSEO `submit_indexnow_urls` with the article URL, `/blog/`, and the city pages it links to.
+  Use `git -c user.name="Claude" -c user.email="noreply@anthropic.com"`. Run `git pull --rebase origin main` first
+  (if anything changed, rebuild and re-run the checks), then push to `main`. Pushing deploys automatically through
+  Cloudflare Workers Builds in about a minute. Never open a pull request.
+- Poll `https://washington-information.mattriedl.workers.dev/blog/<slug>/?v=N` every 15 seconds for up to 5 minutes until
+  it returns 200 with the new title. Also try `https://washingtoninformation.com/blog/<slug>/`: only if that returns 200
+  with the title is the production domain live.
+- Notify search engines only when the production domain is live: OpenSEO `submit_indexnow_urls` with the article URL,
+  `https://washingtoninformation.com/blog/` and the city pages it links to. Otherwise skip IndexNow and say so.
+- Save keywords (free): OpenSEO `save_keywords` with every entry in the article's `keywords` list, lowercased, no tags.
+  Pass `searchVolume`/`keywordDifficulty` metrics only from results you already fetched; never make an extra paid call
+  for them.
+- Log it: OpenSEO `update_project_context` → `appendResearchLog` (date, slug, primary keyword with volume/KD,
+  secondaries, credits used).
 - Never push an article that fails the checks. If you can't finish, leave it unpushed and report why.
