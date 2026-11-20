@@ -5,8 +5,8 @@
   <url><loc>https://washingtoninformation.com/regions/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/counties/</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://washingtoninformation.com/washington-zip-codes/</loc><lastmod>2026-11-19</lastmod></url>
-  <url><loc>https://washingtoninformation.com/washington-area-codes/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://washingtoninformation.com/washington-zip-codes/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://washingtoninformation.com/washington-area-codes/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://washingtoninformation.com/moving-to-washington/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/visit-washington/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/about/</loc><lastmod>2026-11-14</lastmod></url>
@@ -90,7 +90,7 @@
   <url><loc>https://washingtoninformation.com/cities/camas/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/carbonado/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/carnation/</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://washingtoninformation.com/cities/cashmere/</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://washingtoninformation.com/cities/cashmere/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/castle-rock/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/cathlamet/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/centralia/</loc><lastmod>2026-11-14</lastmod></url>
@@ -122,7 +122,7 @@
   <url><loc>https://washingtoninformation.com/cities/des-moines/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/dupont/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/duvall/</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://washingtoninformation.com/cities/east-wenatchee/</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://washingtoninformation.com/cities/east-wenatchee/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/eatonville/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/edgewood/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/edmonds/</loc><lastmod>2026-11-14</lastmod></url>
@@ -184,7 +184,7 @@
   <url><loc>https://washingtoninformation.com/cities/lamont/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/langley/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/latah/</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://washingtoninformation.com/cities/leavenworth/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://washingtoninformation.com/cities/leavenworth/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/liberty-lake/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/lind/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/long-beach/</loc><lastmod>2026-11-14</lastmod></url>
@@ -323,7 +323,7 @@
   <url><loc>https://washingtoninformation.com/cities/washtucna/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/waterville/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/waverly/</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://washingtoninformation.com/cities/wenatchee/</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://washingtoninformation.com/cities/wenatchee/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/westport/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/west-richland/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/white-salmon/</loc><lastmod>2026-11-14</lastmod></url>
@@ -340,7 +340,8 @@
   <url><loc>https://washingtoninformation.com/cities/yarrow-point/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/yelm/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/cities/zillah/</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://washingtoninformation.com/blog/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://washingtoninformation.com/blog/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://washingtoninformation.com/blog/leavenworth-christmas/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://washingtoninformation.com/blog/christmas-lights-in-seattle/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://washingtoninformation.com/blog/washington-state-weather/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://washingtoninformation.com/blog/small-towns-in-washington-state/</loc><lastmod>2026-11-14</lastmod></url>

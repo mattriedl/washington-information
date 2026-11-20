@@ -9,6 +9,7 @@
 | 2026-11-14 | seattle-neighborhoods | seattle neighborhoods | 6,600 / 15 |
 | 2026-11-14 | washington-state-weather | washington state weather | 9,900 / 31 (climate 1,600 / 33) |
 | 2026-11-19 | christmas-lights-in-seattle | christmas lights in seattle | 1,900 / 10 (christmas lights seattle 1,900 / 8; candy cane lane seattle 1,900 / 0) |
+| 2026-11-20 | leavenworth-christmas | leavenworth christmas | 27,100 / 2 (leavenworth christmas town 27,100 / 0; christmas lights in leavenworth wa 4,400 / 0) |
 
 ## Backlog
 | Topic | Seed keyword | Notes |
@@ -17,8 +18,8 @@
 | Best time to visit Mount Rainier | mount rainier best time to visit | long-tail of a head term |
 | Moving to Spokane | moving to spokane | |
 | Washington State Ferries guide | washington state ferries | |
-| Leavenworth Christmas lights / Christmastown | leavenworth christmas lights | 2,900 / KD 0; publish by mid-November |
 | Snowflake Lane Bellevue | snowflake lane bellevue | 9,900 / KD 12 (navigational; Bellevue holiday guide) |
 | Christmas lights in Tacoma (Zoolights, Fantasy Lights) | christmas lights tacoma | 480 / KD 1; zoolights tacoma 3,600 / KD 5 |
 | Christmas lights in Washington State | christmas lights in washington state | 590 / KD 9 |
 | Nutcracker in Seattle / holiday shows | nutcracker seattle | 4,400 / KD 14 |
+| Things to do in Leavenworth in winter | leavenworth in winter | Leavenworth Christmas train 1,000 / KD 2 and christmas market 880 / 0 are covered in leavenworth-christmas; a winter (Jan-Feb) guide could target sledding, Nordic, Winter Karneval |
