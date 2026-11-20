@@ -16,7 +16,7 @@ from datetime import date
 BASE_URL     = 'https://washingtoninformation.com'
 SITE_NAME    = 'Washington Information'
 CONTACT_EMAIL = 'contact@washingtoninformation.com'
-ANALYTICS_ID = ''   # unused: tracking is loaded through Google Tag Manager (GTM_HEAD below)
+ANALYTICS_ID = 'G-ZKFJSK6FM1'   # GA4 measurement ID (loaded directly with gtag.js, alongside Tag Manager)
 GTM_ID       = 'GTM-N26D57SS'   # Google Tag Manager container for washingtoninformation.com
 GTM_HEAD     = (f'<script async src="https://www.googletagmanager.com/gtm.js?id={GTM_ID}"></script>'
                 '<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag(\'js\', new Date());</script>')
