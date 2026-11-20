@@ -16,7 +16,10 @@ from datetime import date
 BASE_URL     = 'https://washingtoninformation.com'
 SITE_NAME    = 'Washington Information'
 CONTACT_EMAIL = 'contact@washingtoninformation.com'
-ANALYTICS_ID = ''   # add the washingtoninformation.com GA4 ID here before launch
+ANALYTICS_ID = ''   # unused: tracking is loaded through Google Tag Manager (GTM_HEAD below)
+GTM_ID       = 'GTM-N26D57SS'   # Google Tag Manager container for washingtoninformation.com
+GTM_HEAD     = (f'<script async src="https://www.googletagmanager.com/gtm.js?id={GTM_ID}"></script>'
+                '<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag(\'js\', new Date());</script>')
 OUT          = 'public'   # everything Cloudflare publishes
 TODAY        = date.today().isoformat()
 DEFAULT_IMG  = f'{BASE_URL}/assets/og-image.png'
@@ -592,6 +595,7 @@ def head(title, desc, path, og_type='website', image=None, extra='', up='', keyw
     url = f'{BASE_URL}{path}'
     img = image or DEFAULT_IMG
     ga = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={ANALYTICS_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag("js",new Date());gtag("config","{ANALYTICS_ID}");</script>' if ANALYTICS_ID else '')
+    ga = GTM_HEAD + ga
     return (f'<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>{e(title)}</title>'
             f'<meta name="description" content="{e(desc)}">' + (f'<meta name="keywords" content="{e(keywords)}">' if keywords else '') + '<meta name="robots" content="index, follow">'
             f'<meta name="viewport" content="width=device-width, initial-scale=1.0">'
@@ -1484,7 +1488,7 @@ PRIVACY = f'''<p><em>Last updated: {PRIVACY_UPDATED}</em></p>
 <h2 class="st">Information you send us</h2>
 <p>If you email us, we receive your email address and whatever you include in your message. We use it only to reply and to improve the site, and we do not share it.</p>
 <h2 class="st">Analytics</h2>
-<p>We may use Google Analytics 4, a web analytics service provided by Google LLC, to understand how visitors use the site (for example, which pages are viewed, how long visits last, approximate location at the city/region level, device and browser type, and how visitors arrived). Google Analytics uses cookies and similar technologies, and the information it collects is processed by Google under its own privacy policy. We use this data only in aggregate to improve the site; we do not use it to identify individual visitors, and we do not use Google Analytics advertising features.</p>
+<p>We use Google Tag Manager and Google Analytics 4, web analytics services provided by Google LLC, to understand how visitors use the site (for example, which pages are viewed, how long visits last, approximate location at the city/region level, device and browser type, and how visitors arrived). Google Analytics uses cookies and similar technologies, and the information it collects is processed by Google under its own privacy policy. We use this data only in aggregate to improve the site; we do not use it to identify individual visitors, and we do not use Google Analytics advertising features.</p>
 <p>You can learn how Google uses this data at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>, and you can opt out of Google Analytics on all websites by installing the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google Analytics Opt-out Browser Add-on</a>. You can also block or delete cookies in your browser settings.</p>
 <h2 class="st">Third-party links and images</h2>
 <p>Pages link to government agencies and other external websites, and some photos are loaded from Wikimedia Commons. Those sites have their own privacy policies, which we do not control.</p>
